@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style .css">
+
+</head>
+
+<body>
+
+    <input id="output" placeholder="Enter">
+
+    <!-- numbers  -->
+    <div class="num">
+
+        <input type="button" class="num1" value="1" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="2" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="3" onclick="enter(this.value)"></input> <input type="button" value="+"
+            class="op" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="4" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="5" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="6" onclick="enter(this.value)"></input> <input type="button" value="-"
+            class="op" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="7" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="8" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="9" onclick="enter(this.value)"></input> <input type="button" value="*"
+            class="op" onclick="enter(this.value)"></input>
+        <input type="button" class="num1" value="0" onclick="enter(this.value)"></input>
+        <input type="button" class="ca" value="AC" onclick="clean()"></input>
+        <input type="button" value="/" class="op" onclick="enter(this.value)"></input>
+        <input type="button" class="be" value="=" onclick="cal()"></input>
+    </div>
+    <script>
+        function enter(inputs) {
+            document.getElementById("output").value += inputs;
+
+        }
+        function clean() {
+            document.getElementById("output").value = "";
+        }
+        function cal() {
+            var kudu = document.getElementById("output").value;
+            var result = eval(kudu);
+            document.getElementById("output").value = result
+        }
+
+    </script>
+</body>
+
+</html>
