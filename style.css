@@ -12,18 +12,14 @@
 
   font-family: sans-serif;
   background-image: radial-gradient(circle, rgb(40, 23, 69), rgb(15, 7, 21));
-  /* display: flex; */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 650px));
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
   gap: 30px;
-  /* width: fit-content ; */
-  padding-top: 200px;
-
-  /* padding-left:200px; */
-  /* padding-right: 200px; */
+  
   margin: 0px auto;
 
 }
+
 
 span:hover {
   color: #764bcd;
@@ -102,14 +98,14 @@ span:hover {
 
 #section1 {
   background-color: radial-gradient(circle, rgb(40, 23, 69), rgb(15, 7, 21));
-  `
+  
 }
 
 .experience {
   color: #fff;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
-  padding-bottom: 50px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 400px)); */
+  padding-bottom: 50px;display: flex;flex-wrap: wrap;
 }
 
 
@@ -215,12 +211,13 @@ span:hover {
   color: #fff;
   padding-top: 200px;
   padding-bottom: 100px;
-  padding-left: 100px;
+  /* padding-left: 100px; */
   background-image: url(https://cdn.pixabay.com/animation/2024/04/09/12/15/12-15-41-714_512.gif);
   background-repeat: no-repeat;
   background-position: right;
   background-blend-mode: lighten;
-  align-items: end;
+  /* align-items: end; */
+  text-align: center;
   background-size: auto;
 
 }
@@ -441,8 +438,8 @@ hr {
   color: #ffff;
   padding-right: 0%auto;
   border-radius: 30px;
-  margin-right: 100px;
-  margin-left: 30px;
+  /* margin-right: 100px; */
+  /* margin-left: 30px; */
   padding: 30px 20px;
   background-color: #140c1c;
   box-sizing: border-box;
@@ -459,7 +456,7 @@ hr {
 }
 
 #firstname {
-  display: block;
+  /* display: block; */
   width: 100%;
   background: #050709;
   border: 1px solid gray;
@@ -469,14 +466,14 @@ hr {
   padding: 14px 20px;
   border-radius: 8px;
   margin: 20px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   transition: all 0.3s 0s ease-out;
   outline: none;
   height: auto;
 }
 
 #lastname {
-  display: block;
+  /* display: block; */
   width: 100%;
   background: #050709;
   border: 1px solid gray;
@@ -492,7 +489,7 @@ hr {
 }
 
 #email {
-  display: block;
+  /* display: block; */
   width: 100%;
   background: #050709;
   border: 1px solid gray;
@@ -508,7 +505,7 @@ hr {
 }
 
 #phone-number {
-  display: block;
+  /* display: block; */
   width: 100%;
   background: #050709;
   border: 1px solid gray;
@@ -524,7 +521,7 @@ hr {
 }
 
 #service {
-  display: block;
+  /* display: block; */
   width: 100%;
   background: #050709;
   border: 1px solid gray;
@@ -558,7 +555,7 @@ button:hover {
 }
 
 #message {
-  display: block;
+  /* display: block; */
   width: 100%;
   background: #050709;
   border: 1px solid gray;
@@ -613,3 +610,8 @@ p {
   display: flex;
 }
 .link{text-decoration: none;color: #fff;}
+.el{
+
+  padding-top: 55px;
+  padding-left:  10px;
+}
