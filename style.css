@@ -587,7 +587,7 @@ button:hover {
   /* margin-top: 100px; */
   color: #fff;
   /* text-align: left */
-  margin: 50px 300px 50px 0px;
+  margin: 50px 300px 50px 20px;
   justify-content: left;
 }
 
@@ -635,7 +635,7 @@ p {
 
 .up {
   position: fixed;
-  right: 50px;
+  right: 50px;z-index:5;
   bottom: 50px;
   color: #6134b5;
   border: 2px solid white;

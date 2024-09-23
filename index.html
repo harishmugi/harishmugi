@@ -2,7 +2,7 @@
 
 <head>
     <title>About me</title>
-</head>
+
 
 
 
@@ -12,7 +12,11 @@
  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<body>
+
+
+
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head><body>
     <header>
         <h1 id="id">MY PORTFOLIO</h1>
         <nav id="nav">
@@ -38,7 +42,7 @@
                       <span>This is</span><Br><span>HARISHMUGI ,</span> <br><span>I'm a</span>
                        <span> Professional</span><br><span>Software</span><span> Developer.</span></h1>
                       </div          >
-                    <div id="icon-align">
+                    <div id="icon-align" data-aos="zoom-in">
                                             <div id="download-button">
                    
                   <div>
@@ -61,7 +65,8 @@
                          </span>
             </div>
 
-            <div class="experience">
+            <div class="experience"  data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
 
 
                 <div  class="ecr">
@@ -123,7 +128,8 @@
 
 
 
-            </div> <span class="qs">
+            </div> <span class="qs"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom  ">
                 <h1>01
                     Branding Design</h1>
                 <p class="qsp">I break down complex user experinece problems to create<br> integritiy focussed solutions
@@ -139,7 +145,8 @@
 
 
 
-            <span class="qs">
+            <span class="qs"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom  ">
                 <h1>02
                     Web Design</h1>
                 <p class="qsp"> I break down complex user experinece problems to create <br> integritiy focussed
@@ -150,7 +157,8 @@
 
 
 
-            <span class="qs">
+            <span class="qs"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom  ">
                 <h1>03
                     UI/UX Design</h1>
                 <p class="qsp"> I break down complex user experinece problems to create<br> integritiy focussed
@@ -165,7 +173,8 @@
 
 
 
-            <span class="qs">
+            <span class="qs"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom  ">
                 <h1>04
                     Graphics Design</h1>
                 <p class="qsp"> I break down complex user experinece problems to create<br> integritiy focussed
@@ -192,10 +201,10 @@
             </h3>
             <div id="pimg">
 
-          <a href="CSS_EOT_6Sep/CSS_EOT_6Sep/" ><img class="pic"src="screencapture-127-0-0-1-5500-CSS-EOT-6Sep-2024-09-06-15_49_49 (1).png"></a>
-         <a href="java script         "    ><img class="pic"src="Screenshot (65).png"></a>
-           <img class="pic" src="WhatsApp Image 2024-09-02 at 8.58.28 AM.jpeg">
-           <img class="pic" src="image.png">
+          <a href="CSS_EOT_6Sep/CSS_EOT_6Sep/" ><img data-aos="fade-right" class="pic"src="screencapture-127-0-0-1-5500-CSS-EOT-6Sep-2024-09-06-15_49_49 (1).png"></a>
+         <a href="java script         "    ><img data-aos="fade-left" class="pic"src="Screenshot (65).png"></a>
+           <img class="pic" data-aos="fade-right" src="WhatsApp Image 2024-09-02 at 8.58.28 AM.jpeg">
+           <img class="pic" data-aos="fade-left" src="image.png">
 </div>
         <div id="skillintro">
             <div>
@@ -310,7 +319,21 @@
 
 
 </body>
-</head>
 
 
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+
+
+
+
+<script>
+    AOS.init();
+  </script>
 </html>
