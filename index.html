@@ -233,27 +233,27 @@
                 </div>
                 <div class="name">
                     <div>
-                        <input type="text" id="firstname" name="user-firstname" placeholder="First name">
+                        <input type="text" id="firstname" name="user-firstname" placeholder="First name" required>
                     </div>
                     <div >
                         <input type="text" id="lastname" name="user-lastname" placeholder="Last name ">
                     </div>
                 </div>
             </div>
-
+            <input type="hidden" name="_captcha" value="false">
 
 
 
             <div class="number">
                 <div class="enter">
-                    <input type="mail" id="email" name="email" placeholder="Email address         ">
+                    <input type="email" id="email" pattern="[a-z.-_0-9]+@[a-z]+\.[a-z]+"  name="email" placeholder="Email address         " required>
                 </div>
                 <div>
                     <input type="text" id="phone-number" name="phone-number" placeholder="Phone number          ">
                 </div>
             </div>
             <div>
-                <select name="service" id="service" placeholder="choose">
+                <select name="service" id="service" placeholder="choose"   required>
                     <option selected option disabled>Choose Service</option>
                     <option>Branding Design</option>
                     <option> Web Design</option>
