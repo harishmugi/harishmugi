@@ -179,13 +179,12 @@ span:hover {
   margin: 0px auto;
   scale: 1.5;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px 10px black;
+  box-shadow: 10px 10px 31px 5px black;
 }
 
 #enphotofull {
   display: flex;
 }
-
 
 
 #enphoto h1:hover {
@@ -216,12 +215,10 @@ span:hover {
   color: #fff;
   padding-top: 200px;
   padding-bottom: 100px;
-  /* padding-left: 100px; */
   background-image: url(https://cdn.pixabay.com/animation/2024/04/09/12/15/12-15-41-714_512.gif);
   background-repeat: no-repeat;
   background-position: right;
   background-blend-mode: lighten;
-  /* align-items: end; */
   text-align: center;
   background-size: auto;
 
@@ -292,8 +289,7 @@ header {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  /* text-align: center; */
-  /* text-align: center; */
+  
   position: static;
   color: #fff
 }
@@ -313,18 +309,13 @@ header {
 }
 
 .qs:hover {
-  /* flex-grow: 1; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
-  /* flex-wrap: wrap; */
-  /* display: flex; */
   background-image: linear-gradient(to right, rgb(131, 78, 240), rgb(47, 23, 92));
   color: #fff;
   padding: 10px;
   border: 1px solid black;
   border-radius: 30px;
-  /* margin-right: 200px; */
-  /* margin-left: 200px; */
   margin-top: 30px;
   margin-bottom: 30px;
 }
