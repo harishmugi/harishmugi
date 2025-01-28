@@ -23,8 +23,68 @@
 
 span:hover {
   color: #764bcd;
+}:root {
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#ab3fc6,
+		#24143d,
+		#dda0dd,
+		#e7c0fd,
+		#d28be4,
+		#3a2063,
+		#24143d,
+		#dda0dd,
+		#e7c0fd,
+		#ab3fc6
+	);
+}
+.HM{	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	font-size: 50px;bottom: 15px;
+	font-weight: bold;border-radius: 50%;padding: 5px;box-shadow: inset 0px 0px 5px 10px		#24143d,
+  ;
+}
+.HM:before,
+.HM:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+  border-radius: 50%;padding: 5px;
+
+	animation: animate 20s linear infinite;
 }
 
+.HM:after {
+	filter: blur(20px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.nav-active{
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to right, #844ef2, #31185f);
+}
 .download-icon {
   padding-left: 5px;
 }
@@ -45,6 +105,7 @@ span:hover {
   border-radius: 30px;
   margin-top: 100px;
   transition: 1s;
+
 }
 
 #download-button:active {
@@ -132,7 +193,6 @@ span:hover {
 
 #naan:hover {
   rotate: 50%;
-  ;
   align-items: center;
   border: 2px solid rgb(232, 44, 239);
   border-radius: 38px;
@@ -146,7 +206,9 @@ span:hover {
 
   border: 2px solid #9a5fc2;
   border-bottom-right-radius: 40px;
-  border-top-left-radius: 40px;
+  border-top-left-radius: 40px;  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+
 
 
   box-shadow: 20px 30px 30px 20px rgba(0, 0, 0, 0.409);
@@ -171,14 +233,14 @@ span:hover {
 .pic {
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.8s;
 }
 
 .pic:hover {
   border: 2px solid #764bcd;
   margin: 0px auto;
-  scale: 1.5;
+  scale: 1.2;
   border-radius: 10px;
+  transition: all 1s ease-in-out;
   box-shadow: 10px 10px 31px 5px black;
 }
 
@@ -247,10 +309,12 @@ span:hover {
   margin-top: 10px;
   color: #ffff;
   text-decoration: none;
-}
+}.active{border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to right, #844ef2, #31185f);}
 
 #nav a:hover {
-  background-color: #fff;
+  
   border-radius: 20px;
   border: none;
   background-image: linear-gradient(to right, #844ef2, #31185f);
@@ -259,7 +323,7 @@ span:hover {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 4fr 5fr;
   width: 100vw;
   color: #fff;
   background-color: #251440;
@@ -298,13 +362,13 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 460px));
   background-color: #050709;
-  color: #fff;
+  color: #fff;gap:100px;
   padding: 10px;
   border: 1px solid black;
   margin-left: 50px;
   margin-right: 50px;
-  text-align: center;
-  margin-top: 30px;
+  /* text-align: center; */
+  margin-top:   30px;
   margin-bottom: 30px;
 }
 
@@ -322,11 +386,11 @@ header {
 
 .qsp {
 
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: auto;
+  /* justify-content: center; */
+  /* margin-left: 50px; */
+  /* margin-right: auto; */
   padding: 10px;
-  align-items: center;
+  align-items: left;
 }
 
 main {
@@ -362,26 +426,24 @@ hr {
 
 }
 
-#pimg {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(700px, 2fr));
-  padding-top: 200px;
+#pimg {transition: 1s;
+  display: flex;flex-wrap:wrap;
+  /* grid-template-columns: repeat(auto-fill, minmax(700px, 2fr)); */
+  padding-top: 200px;gap: 100px;
   background-image: radial-gradient(#261642, transparent, black);
-
-  margin-bottom: 100px;
-}
+justify-content: center;
+padding: 7%;}
 
 .pic {
-  height: 400px;
-  width: 400px;
-  margin-bottom: 100px;
+  height: 300px;
+  width: 300px;
+  /* margin-bottom: 100px; */
 }
 
 #skillintro {
 
   color: #fff;
   font-family: sans-serif;
-  text-align: center;
   padding: 100px;
   height: fit-content;
   background-color: #0f0715;
@@ -392,10 +454,10 @@ hr {
 #skill {
   background-color: #0f0715;
   color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 100px;
-  text-align: center;
+  display: grid;transition: 2s;
+  flex-wrap: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  padding-top: 100px;gap: 50px;
   justify-content: space-around;
   /* margin-top: 200px; */
   /* margin-bottom: 200px; */
@@ -405,10 +467,9 @@ hr {
 }
 
 .skillimg {
-  opacity: 100;
   background-color: #140c1c;
   padding: 40px;
-  height: 200px;
+  height: 200px;transition: 2s;
   width: 200px;
   border-radius: 20px;
   opacity: 0.5;
@@ -654,4 +715,76 @@ p {
 .up:active {
   transform: rotate(360deg);
   transition: 0.5s;
+}
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  padding: 0 5px 0 5px;
+  display: flex;align-items: center;
+  height: 20px;margin-top: 30px;
+  width: 300px;
+}
+
+.progress-value {
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #6134b5; /* Color for the progress bar */
+  height: 10px;margin-left: 0;
+  width: 0; /* Start with width 0, set dynamically */
+  /* transition: width 1s ease-in-out; Smooth transition for width */
+}
+.progress-container {
+  margin: 10px 0;
+  height: 50px;
+}
+
+.counter {
+  right: 30%;z-index: 20;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-weight: bolder;font-size: 30px;
+  font-size: 14px;
+}.mogi {  align-items: center;flex-direction: column;
+  display: flex;
+  position: relative; /* This allows .mogi_cont to be positioned relative to .mogi */
+}
+
+.mogi_cont {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 300px;
+  height: 300px;
+  top: 0;line-height: 30px;
+  left: 0;
+  opacity: 0;  /* Initially hide the .mogi_cont */
+  pointer-events: none;  /* Prevent it from interfering with mouse events */
+  transition: opacity 0.3s; /* Optional smooth transition */
+}
+
+.mogi:hover   .mogi_cont {
+  background-color: #00000088;
+  opacity: 1; /* Show the .mogi_cont on hover */
+  pointer-events: auto;  /* Allow interaction with the .mogi_cont */
+  z-index: 10; /* Ensure .mogi_cont is above .mogi */
+}
+
+.html, .css, .js,.py, .mysql, .problem_soving{
+  height: 250px;
+}
+
+.stars{
+  display: flex;
+  width:200px;  opacity: 0.5;
+
+}
+.Communication{
+  display: flex;gap: 5%;
+  justify-content: center;
+}.lifeSkills{ display: flex; gap:5%;margin-bottom: 10%;  justify-content: center;
+
+}.els{
+  display: flex;
+  flex-direction: column;gap :50px
 }
