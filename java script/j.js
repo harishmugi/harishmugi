@@ -95,7 +95,7 @@ const html = document.querySelector(".html");
 const css = document.querySelector(".css");
 const js = document.querySelector(".js");
 const mysql = document.querySelector(".mysql");
-const problem_soving = document.querySelector(".problem_soving");
+const problem_solving = document.querySelector(".problem_solving");
 
 const py = document.querySelector(".py");
 const htmlimg = document.querySelector(".htmlimg");
@@ -103,7 +103,7 @@ const mysqlimg = document.querySelector(".mysqlimg");
 
 const cssimg = document.querySelector(".cssimg");
 const pyimg = document.querySelector(".pyimg");
-const problem_sovingimg = document.querySelector(".problem_sovingimg");
+const problem_solvingimg = document.querySelector(".problem_solvingimg");
 
 const jsimg = document.querySelector(".jsimg");
 // Add event listener for the mouseover event on the 'html' element
@@ -148,7 +148,7 @@ function createProgressBar(targetPercentage, container) {
   
   // HTML Progress Bar (90%)
   htmlimg.addEventListener("mouseover", () => {
-    createProgressBar(90, html); // 90% for HTML
+    createProgressBar(60, html); // 90% for HTML
   });
   htmlimg.addEventListener("mouseleave", () => {
     const progressContainer = html.querySelector(".progress-container");
@@ -159,7 +159,7 @@ function createProgressBar(targetPercentage, container) {
   
   // CSS Progress Bar (90%)
   cssimg.addEventListener("mouseover", () => {
-    createProgressBar(90, css); // 90% for CSS
+    createProgressBar(60, css); // 90% for CSS
   });
   cssimg.addEventListener("mouseleave", () => {
     const progressContainer = css.querySelector(".progress-container");
@@ -180,7 +180,7 @@ function createProgressBar(targetPercentage, container) {
   });
     // HTML Progress Bar (90%)
     pyimg.addEventListener("mouseover", () => {
-      createProgressBar(50, py); // 90% for HTML
+      createProgressBar(80, py); // 90% for HTML
     });
     pyimg.addEventListener("mouseleave", () => {
       const progressContainer = py.querySelector(".progress-container");
@@ -197,11 +197,11 @@ mysqlimg.addEventListener("mouseleave", () => {
   if (progressContainer) {
     progressContainer.remove(); // This removes the progress bar container
   }
-}); problem_sovingimg.addEventListener("mouseover", () => {
-  createProgressBar(75, problem_soving ); // 90% for HTML
+}); problem_solvingimg.addEventListener("mouseover", () => {
+  createProgressBar(100, problem_solving ); // 90% for HTML
 });
-problem_sovingimg.addEventListener("mouseleave", () => {
-  const progressContainer = problem_soving.querySelector(".progress-container");
+problem_solvingimg.addEventListener("mouseleave", () => {
+  const progressContainer = problem_solving.querySelector(".progress-container");
   if (progressContainer) {
     progressContainer.remove(); // This removes the progress bar container
   }
